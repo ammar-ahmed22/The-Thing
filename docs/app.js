@@ -57,6 +57,7 @@ fetch('../python/as.txt').then(response => response.text()).then(text => {
 
     //Function that will be called on button press
     const adultSwim = () => {
+        window.scrollTo(0,document.getElementById('adult').clientHeight)
         var interval = setInterval(()=>{ //Interval so that it happens gradually
             tempString = `<p class="para">${strings[index]}</p>`
             index++
