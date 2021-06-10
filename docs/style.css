@@ -2,7 +2,8 @@
     font-family: 'Oswald', sans-serif;
     --bg: #000;
     --white: #EFF6EE;
-    --accent: #273043;
+    --accent: #50858B;
+    --accent-light: #59959B;
 }
 
 
@@ -24,6 +25,7 @@ body{
     padding: 0;
     font-size: .5rem;
     line-height: .5rem;
+    color: #000;
 }
 
 .info{
@@ -41,6 +43,10 @@ body{
     font-weight: 200;
 }
 
+.info h1 span{
+    color: var(--accent);
+}
+
 button{
     border: none;
     outline: none;
@@ -51,6 +57,12 @@ button{
     border-radius: 1rem;
     font-family: 'Oswald', sans-serif;
     cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--accent-light);
+    letter-spacing: 2px;
+    transition: all .35s ease-in-out;
 }
 
 .adult-swim{
